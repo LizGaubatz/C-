@@ -48,7 +48,11 @@ class SinglyLinkedList {
      * - Space: O(?).
      * @returns {boolean}
      */
-    isEmpty() { }
+    isEmpty() { 
+        if(this.head == null) {
+            return true;
+        } else return false
+    }
 
     /**
      * Creates a new node with the given data and inserts it at the back of
@@ -58,7 +62,19 @@ class SinglyLinkedList {
      * @param {any} data The data to be added to the new node.
      * @returns {SinglyLinkedList} This list.
      */
-    insertAtBack(data) { }
+    insertAtBack(data) {
+        if (this.isEmpty()) {
+            this.head = new Node(data);
+            return this
+        }
+        let runner = this.head;
+        while (runner.next != null) {
+            console.log(runner.data);
+            runner = runner.next;
+        }
+        runner.next = new Node(data);
+        return this
+    } 
 
     /**
      * Calls insertAtBack on each item of the given array.
