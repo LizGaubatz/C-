@@ -1,0 +1,23 @@
+C#
+
+______________________
+
+NEW PROJECT:
+
+mkdir folderName
+cd folderName
+dotnet new console
+__
+
+OR
+__
+
+dotnet new console -o folderName
+__
+
+dotnet run
+
+______________________
+
+
+
