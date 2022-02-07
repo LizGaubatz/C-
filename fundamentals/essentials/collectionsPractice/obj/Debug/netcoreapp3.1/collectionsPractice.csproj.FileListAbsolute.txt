@@ -1,0 +1,13 @@
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\bin\Debug\netcoreapp3.1\collectionsPractice.exe
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\bin\Debug\netcoreapp3.1\collectionsPractice.deps.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\bin\Debug\netcoreapp3.1\collectionsPractice.runtimeconfig.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\bin\Debug\netcoreapp3.1\collectionsPractice.runtimeconfig.dev.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\bin\Debug\netcoreapp3.1\collectionsPractice.dll
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\bin\Debug\netcoreapp3.1\collectionsPractice.pdb
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.csprojAssemblyReference.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.AssemblyInfoInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.AssemblyInfo.cs
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.csproj.CoreCompileInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.dll
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.pdb
+C:\Users\gauba\CD\C#\fundamentals\essentials\collectionsPractice\obj\Debug\netcoreapp3.1\collectionsPractice.genruntimeconfig.cache
