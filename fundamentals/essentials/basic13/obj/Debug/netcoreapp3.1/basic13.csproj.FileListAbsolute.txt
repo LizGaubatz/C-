@@ -1,0 +1,13 @@
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\bin\Debug\netcoreapp3.1\basic13.exe
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\bin\Debug\netcoreapp3.1\basic13.deps.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\bin\Debug\netcoreapp3.1\basic13.runtimeconfig.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\bin\Debug\netcoreapp3.1\basic13.runtimeconfig.dev.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\bin\Debug\netcoreapp3.1\basic13.dll
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\bin\Debug\netcoreapp3.1\basic13.pdb
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.csprojAssemblyReference.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.AssemblyInfoInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.AssemblyInfo.cs
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.csproj.CoreCompileInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.dll
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.pdb
+C:\Users\gauba\CD\C#\fundamentals\essentials\basic13\obj\Debug\netcoreapp3.1\basic13.genruntimeconfig.cache
