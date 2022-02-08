@@ -1,0 +1,13 @@
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\bin\Debug\netcoreapp3.1\multiplicationTable.exe
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\bin\Debug\netcoreapp3.1\multiplicationTable.deps.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\bin\Debug\netcoreapp3.1\multiplicationTable.runtimeconfig.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\bin\Debug\netcoreapp3.1\multiplicationTable.runtimeconfig.dev.json
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\bin\Debug\netcoreapp3.1\multiplicationTable.dll
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\bin\Debug\netcoreapp3.1\multiplicationTable.pdb
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.csprojAssemblyReference.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.AssemblyInfoInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.AssemblyInfo.cs
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.csproj.CoreCompileInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.dll
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.pdb
+C:\Users\gauba\CD\C#\fundamentals\essentials\multiplicationTable\obj\Debug\netcoreapp3.1\multiplicationTable.genruntimeconfig.cache
