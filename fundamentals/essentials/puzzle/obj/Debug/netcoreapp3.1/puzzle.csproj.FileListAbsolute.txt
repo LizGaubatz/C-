@@ -1,0 +1,4 @@
+C:\Users\gauba\CD\C#\fundamentals\essentials\puzzle\obj\Debug\netcoreapp3.1\puzzle.csprojAssemblyReference.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\puzzle\obj\Debug\netcoreapp3.1\puzzle.AssemblyInfoInputs.cache
+C:\Users\gauba\CD\C#\fundamentals\essentials\puzzle\obj\Debug\netcoreapp3.1\puzzle.AssemblyInfo.cs
+C:\Users\gauba\CD\C#\fundamentals\essentials\puzzle\obj\Debug\netcoreapp3.1\puzzle.csproj.CoreCompileInputs.cache
