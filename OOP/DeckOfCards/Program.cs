@@ -11,7 +11,7 @@ namespace DeckOfCards
 
             Deck CardDeck = new Deck();
             CardDeck.Shuffle();
-            Player liz = new Player("ian");
+            Player liz = new Player("lizzy");
             liz.Draw(CardDeck);
             liz.Draw(CardDeck);
             liz.Discard(5);
