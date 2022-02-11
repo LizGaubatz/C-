@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace DeckOfCards
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
@@ -55,6 +56,7 @@ namespace DeckOfCards
         Suite: {Suit}
         Value: {Value}";
         }
+            }
 
 
 
@@ -167,6 +169,7 @@ public class Player
             Card cardToRemove = Hand[i];
             Hand.Remove(cardToRemove);
             return cardToRemove;
+            }
         }
     }
 }
