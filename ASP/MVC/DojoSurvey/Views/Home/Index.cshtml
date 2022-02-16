@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@model Survey
+<style>
+    .dojo-survey{
+        margin: 0 auto;
+        background-color: navy;
+        color: #fff;
+        padding: 20px;
+        border: 2px solid #3c3c3c;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+</style>
+
+<form asp-action="submit" asp-controller="Home" method="post" class="form-group col-lg-6 m-auto border p-5">
+    <h1>Dojo Survey</h1>
+    <p>
+        <label for="Name">Name: </label>
+        <input asp-for="Name" name="Name" class="form-control"/>
+        <p>
+        <span asp-validation-for="Name" class="text-danger"></span>
+        </p>
+    </p>
+    <p>
+        <label for="DojoLocation">Dojo Location: </label>
+        <select name="Location">
+            <option value="">Select One</option>
+            <option value="Seattle">Seattle</option>
+            <option value="LA">LA</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Boise">Boise</option>
+        </select>
+        <p>
+        <span asp-validation-for="Location" class="text-danger"></span>
+        </p>
+        <p>
+        <label for="Language">Favorite Language: </label>
+        <select name="Language">
+            <option value="">Select One</option>
+            <option value="C#">C#</option>
+            <option value="React">React</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+    </p>
+        <span asp-validation-for="Language" class="text-danger"></span>
+    </p>
+    </p>
+    <p>
+        <label asp-for="Comments"></label>
+        <textarea asp-for="Comments"class="form-control" placeholder="Comments (optional)">
+        </textarea>
+        <p>
+        <span asp-validation-for="Comments" class="text-danger" ></span>
+        </p>
+    </p>
+    <input class="btn btn-success" type="submit" value="Submit"/>
+</form>
