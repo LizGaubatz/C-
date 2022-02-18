@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @if (ViewBag.PassWordNum != null)
+    {
+        <h3 id="PCNUM">Random password (password #@ViewBag.PassWordNum)</h3>
+    }
+    else
+    {
+        <h3 id="PCNUM">Press Generate to Begin</h3>
+    }
+    <h3 id="PCCODE">@ViewBag.PassWord</h3>
+    <button class="btn btn-danger" onclick="Password()">Generate</button>
+    <a class="btn btn-danger" href="/reset">Reset</a>
+</div>
