@@ -2,6 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="~/js/site.js"></script>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     @if (ViewBag.PassWordNum != null)
@@ -13,6 +16,6 @@
         <h3 id="PCNUM">Press Generate to Begin</h3>
     }
     <h3 id="PCCODE">@ViewBag.PassWord</h3>
-    <button class="btn btn-danger" onclick="Password()">Generate</button>
+    <button class="btn btn-danger" id="generateButton">Generate</button>
     <a class="btn btn-danger" href="/reset">Reset</a>
 </div>
