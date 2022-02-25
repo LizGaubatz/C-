@@ -1,0 +1,55 @@
+<partial name="_NavPartial.cshtml"></partial>
+<h4> Welcome @ViewBag.LoggedInUser.Name!</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Activity</th>
+            <th scope="col">Date and Time</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Event Coordinator</th>
+            <th scope="col">No. of Participants</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            if(ViewBag.AllActivities == null)
+            {
+                <h4>No Activities yet</h4>
+            }else{
+                foreach(Activities w in ViewBag.AllActivities)
+                {
+                    int yearCompare = @w.ActivityDate.Year - @DateTime.Now.Year;
+                    int monthCompare = @w.ActivityDate.Month - @DateTime.Now.Month;
+                    int dayCompare = @w.ActivityDate.Day - @DateTime.Now.Day;
+                    if (0>yearCompare || yearCompare == 0 && 0>monthCompare || yearCompare == 0 && monthCompare == 0 && 0>dayCompare)
+                    {
+                        continue;
+                    }else{
+                        <tr>
+                            <td><a href="/activity/@w.ActivityId">@w.Title</a></td>
+                            <td>@w.ActivityDate.ToString("MMMM dd, yyyy @")  @w.ActivityTime.ToString("hh:mm tt")</td>
+                            <td>@w.Duration @w.DurationUnit</td>
+                            <td>@w.Coordinator.Name</td>
+                            <td>@w.Participants.Count</td>
+                            @{
+                                if(@w.Coordinator.UserId == @ViewBag.LoggedInUser.UserId)
+                                {
+                                    <td><a href="/delete/@w.ActivityId">Delete</a></td>
+                                }else{
+                                    if(w.Participants.Any(f => f.UserId == ViewBag.LoggedInUser.UserId))
+                                        {
+                                            <td><a href="/leave/@w.ActivityId/@ViewBag.LoggedInUser.UserId" class="btn btn-primary">Leave</a></td>
+                                        }else {
+                                            <td><a href="/join/@w.ActivityId/@ViewBag.LoggedInUser.UserId" class="btn btn-primary">Join</a></td>
+                                        }
+                                }
+                            }
+                        </tr>
+                    }
+                }
+            }
+        }
+    </tbody>
+</table>
+<a href="/newActivity" class="btn btn-primary">Add New Activity</a>

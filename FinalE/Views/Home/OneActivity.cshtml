@@ -1,0 +1,34 @@
+@model Activities
+
+<partial name="_NavPartial.cshtml"></partial>
+<h1>@Model.Title</h1>
+<h3>Event Coordinator: @Model.Coordinator.Name</h3>
+<h3>Description:</h3>
+<p>@Model.Description</p>
+<h3>Participants:</h3>
+<ul>
+@{
+    if(Model.Participants == null)
+    {
+        <p>No One, Yet</p>
+    }else{
+        foreach(Participants a in @Model.Participants)
+        {
+            <li>@a.User.Name</li>
+        }
+    }
+}
+</ul>
+@{
+    if(Model.UserId == @ViewBag.LoggedInUser.UserId)
+    {
+        <td><a href="/delete/@Model.ActivityId">Delete</a></td>
+    }else{
+        if(Model.Participants.Any(f => f.UserId == ViewBag.LoggedInUser.UserId))
+            {
+                <td><a href="/leave/@Model.ActivityId/@ViewBag.LoggedInUser.UserId" class="btn btn-primary">Leave</a></td>
+            }else {
+                <td><a href="/join/@Model.ActivityId/@ViewBag.LoggedInUser.UserId" class="btn btn-primary">Join</a></td>
+            }
+    }
+}
