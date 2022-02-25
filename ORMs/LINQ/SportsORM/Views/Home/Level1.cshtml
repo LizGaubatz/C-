@@ -1,0 +1,276 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Level 1</div>
+    <div class="card-body">
+        <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
+        <ol>
+            <li>...all womens' leagues</li>
+            <p>ViewBag.WomensLeagues = _context.Leagues
+                .Where(l => l.Sport.Contains("Women"))
+                .ToList();</p>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>League Name</th>
+                    <th>League Sport</th>
+                </tr>
+                @foreach (var l in ViewBag.WomensLeagues)
+
+                {
+                    <tr>
+                        <td>@l.Name</td>
+                        <td>@l.Sport</td>
+                    </tr>
+
+                }
+            </table>
+
+
+            <li>hockey</li>
+            <p>ViewBag.HokeyLeagues = context.Leagues
+                .Where(l => l.Sport.Contains("Hockey")); </p>
+            <table>
+                <tr>
+                    <th>League Name</th>
+                    <th>League Sport</th>
+                </tr>
+                @foreach (var l in ViewBag.HockeyLeagues)
+                {
+                    <tr>
+                        <td>@l.Name</td>
+                        <td>@l.Sport</td>
+                    </tr>
+                }
+
+            </table>
+            <li>not Football</li>
+            <p>ViewBag.FootballLeagues =_context.Leagues
+                .Where(l => l.Sport != "Football" )
+                .ToList(); </p>
+            <table>
+                <tr>
+                    <th>League Name</th>
+                    <th>League Sport</th>
+                </tr>
+                @foreach (var l in ViewBag.FootballLeagues)
+                {
+                    <tr>
+                        <td>@l.Name</td>
+                        <td>@l.Sport</td>
+                    </tr>
+                }
+            </table>
+
+
+            <li>conferences</li>
+            <p>ViewBag.ConferenceLeagues = context.Leagues
+                .Where(l => l.Name.Contains("conferences")); </p>
+            <table>
+                <tr>
+                    <th>League Name</th>
+                    <th>League Sport</th>
+                </tr>
+                @foreach (var l in ViewBag.ConferenceLeagues)
+                {
+                    <tr>
+                        <td>@l.Name</td>
+                        <td>@l.Sport</td>
+                    </tr>
+                }
+            </table>
+
+
+            <li>in the Atlantic region</li>
+            <p>ViewBag.AtlanticLeagues = context.Leagues
+                .Where(l => l.Name.Contains("Atlantic")); </p>
+            <table class="table table-striped">
+                <tr>
+                    <th>League Name</th>
+                    <th>League Sport</th>
+                </tr>
+                @foreach (var l in ViewBag.AtlanticLeagues)
+                {
+                    <tr>
+                        <td>@l.Name</td>
+                        <td>@l.Sport</td>
+                    </tr>
+                }
+            </table>
+
+            <li>Dallas</li>
+            <p>ViewBag.DallasLeagues = context.teams
+                .Where(l => l.Location.Contains("Dallas")); </p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Team Location</th>
+                    <th>Team Name</th>
+                </tr>
+                @foreach (var l in ViewBag.DallasLeagues)
+                {
+                    <tr>
+                        <td>@l.Location</td>
+                        <td>@l.TeamName</td>
+                    </tr>
+                }
+            </table>
+
+            <li>Raptors</li>
+            <p>ViewBag.RaptorsLeagues = context.teams
+                .Where(l => l.TeamName.Contains("Raptors"));</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Team Location</th>
+                    <th>Team Name</th>
+                </tr>
+                @foreach (var l in ViewBag.RaptorsLeagues)
+                {
+                    <tr>
+                        <td>@l.Location</td>
+                        <td>@l.TeamName</td>
+                    </tr>
+                }
+            </table>
+
+            <li>includes "City"</li>
+            <p>ViewBag.CityLeagues = context.teams
+                .Where(l => l.Location.Contains("City"));</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Team Location</th>
+                    <th>Team Name</th>
+                </tr>
+                @foreach (var l in ViewBag.CityLeagues)
+                {
+                    <tr>
+                        <td>@l.Location</td>
+                        <td>@l.TeamName</td>
+                    </tr>
+                }
+            </table>
+
+            <li>start with "T"</li>
+            <p> ViewBag.TLeagues = _context.Teams 
+                .Where(l => l.TeamName.StartsWith("T"))
+                .ToList();</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Team Location</th>
+                    <th>Team Name</th>
+                </tr>
+                @foreach (var l in ViewBag.TLeagues)
+                {
+                    <tr>
+                        <td>@l.Location</td>
+                        <td>@l.TeamName</td>
+                    </tr>
+                }
+            </table>
+
+            <li>alphabetically by location</li>
+            <p>ViewBag.AlphaLeagues = context.teams
+                .OrderBy(l => l.Location);</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Team Location</th>
+                    <th>Team Name</th>
+                </tr>
+                @foreach (var l in ViewBag.AlphaLeagues)
+                {
+                    <tr>
+                        <td>@l.Location</td>
+                        <td>@l.TeamName</td>
+                    </tr>
+                }
+            </table>
+
+
+            <li>reverse alphabetical order</li>
+            <p>ViewBag.ReverseLeagues = context.teams
+                .OrderedByDescending(l => l.TeamName);</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Team Location</th>
+                    <th>Team Name</th>
+                </tr>
+                @foreach (var l in ViewBag.ReverseLeagues)
+                {
+                    <tr>
+                        <td>@l.Location</td>
+                        <td>@l.TeamName</td>
+                    </tr>
+                }
+            </table>
+
+
+            <li>last name "Cooper"</li>
+            <p>ViewBag.Cooper = context.player
+                .Where(l => l.LastName.Contains("Cooper"));</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Player FirstName</th>
+                    <th>Player LastName</th>
+                </tr>
+                @foreach (var l in ViewBag.Cooper)
+                {
+                    <tr>
+                        <td>@l.FirstName</td>
+                        <td>@l.LastName</td>
+                    </tr>
+                }
+            </table>
+
+
+            <li>first name "Joshua"</li>
+            <p>ViewBag.JoshuaLeagues =_context.player
+                .Where(l => l.FirstName.Contains("Joshua"));</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Player FirstName</th>
+                    <th>Player LastName</th>
+                </tr>
+                @foreach (var l in ViewBag.JoshuaLeagues)
+                {
+                    <tr>
+                        <td>@l.FirstName</td>
+                        <td>@l.LastName</td>
+                    </tr>
+                }
+            </table>
+
+            <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li>
+            <p>ViewBag.JoshuaLeagues =_context.Players
+                .Where(l => l.LastName == "Cooper" && l.FirstName != "Joshua" )
+                .ToList();</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Player FirstName</th>
+                    <th>Player LastName</th>
+                </tr>
+                @foreach (var l in ViewBag.Cooper)
+                {
+                    <tr>
+                        <td>@l.FirstName</td>
+                        <td>@l.LastName</td>
+                    </tr>
+                }
+            </table>
+
+            <li>first name "Alexander" OR first name "Wyatt"</li>
+            <p>ViewBag.OrLeagues =_context.Players
+                .Where(l => l.FirstName == "Alexander" || l.FirstName == "Wyatt" )
+                .ToList();</p>
+            <table class="table table-striped">
+                <tr>
+                    <th>Player FirstName</th>
+                    <th>Player LastName</th>
+                </tr>
+                @foreach (var l in ViewBag.OrLeagues)
+                {
+                    <tr>
+                        <td>@l.FirstName</td>
+                        <td>@l.LastName</td>
+                    </tr>
+                }
+            </table>
+        </ol>
+    </div>
+</div>
