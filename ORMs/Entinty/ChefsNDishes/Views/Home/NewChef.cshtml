@@ -1,0 +1,33 @@
+@model Chef
+
+@{
+    ViewData["Title"] = "New Chef";
+}
+
+<div class="d-flex flex-column justify-content-start">
+    <form class="d-flex flex-row" asp-action="NewChef" method="post">
+        <div class="col-5 d-flex flex-column">
+            <div class="form-group">
+                <label for="FirstName">First Name</label>
+                <input type="text" class="form-control" asp-for="FirstName" id="FirstName" placeholder="Moose">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="LastName">Last Name</label>
+                <input type="text" class="form-control" asp-for="LastName" id="LastName" placeholder="Phillips">
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5 d-flex flex-column">
+            <div class="form-group">
+                <label for="DOB">Date of Birth</label>
+                <input asp-for="DOB" placeholder="Must be at least 8 chars">
+                <span asp-validation-for="DOB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add New Chef</button>
+            </div>
+        </div>
+    </form>
+</div>
